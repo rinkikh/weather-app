@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
+
 <body>
     <div class="card">
         <div class="search">
-            <input type="text" placeholder="enter city name" 
-            spellcheck="false">
-            <button><i  class="fa-solid fa-magnifying-glass" style="font-size: 22px;"></i></button>
+            <input type="text" placeholder="enter city name" spellcheck="false">
+            <button><i class="fa-solid fa-magnifying-glass" style="font-size: 22px;"></i></button>
         </div>
+
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+
         <div class="weather">
             <i class="fa-solid fa-cloud-rain weather-icon"></i>
             <h1 class="temp">22°C</h1>
@@ -37,6 +42,8 @@
             </div>
         </div>
     </div>
-    
+    <script src="script.js"></script>
+
 </body>
+
 </html>
